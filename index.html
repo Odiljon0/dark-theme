@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Project</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./img/night-mode.png" id="icon" alt="">
+            <div class="proyekt">
+                <div class="profil">
+                    <div class="profil__avatar">
+                        <img src="./img/profile - picture.png" alt="">
+                    </div>
+                    <div class="profil__info">
+                        <h2 class="profil__info__title">Victor Alvarado</h2>
+                        <p class="profil__info__text">Software Engineer</p>
+                        <ul class="profil__list">
+                            <li class="profil__item">
+                                <img src="./img/github.svg" alt="">
+                            </li>
+                            <li class="profil__item">
+                                <img src="./img/twitter.svg" alt="">
+                            </li>
+                            <li class="profil__item">
+                                <img src="./img/linkedin.svg" alt="">
+                            </li>
+                            <li class="profil__item">
+                                <img src="./img/youtube.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="facts">
+                    <ul class="facts__list">
+                        <li class="facts__item">
+                            <span>7</span>
+                            <p>Years of work <br> experience</p>
+                        </li>
+                        <li class="facts__item">
+                            <span>50+</span>
+                            <p>Completed <br> projects</p>
+                        </li>
+                        <li class="facts__item">
+                            <span>20+</span>
+                            <p>Satisfied <br> customers</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn">
+                    <button class="btn__orange">Download CV <img class="btn__img" src="./img/Bottom Alignment.svg" alt=""></button>
+                    <button class="btn__white">Contact me</button>
+                </div>
+                <div class="tabs">
+                    <button class="tabs__portfolio">Portfolio</button>
+                    <button class="tabs__skills">Skills</button>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="content__list" >
+                    <li class="item">
+                        <img src="./img/Rectangle 1.png" alt="">
+                    </li>
+                    <li class="item">
+                        <img src="./img/Rectangle 2.png" alt="">
+                    </li>
+                </ul>
+                <ul class="content__list">
+                    <li class="item">
+                        <img src="./img/Rectangle 3.png" alt="">
+                    </li>
+                    <li class="item">
+                        <img src="./img/Rectangle 4.png" alt="">
+                    </li>
+                </ul>
+                <ul class="content__list">
+                    <li class="item">
+                        <img src="./img/Rectangle 5.png" alt="">
+                    </li>
+                    <li class="item">
+                        <img src="./img/Rectangle 6.png" alt="">
+                    </li>
+                </ul>
+                <p class="content__end">© Victor Alvarado. 2022 All rigths reserved</p>
+            </div>
+        </div>
+    </header>
+    <script>
+
+        var icon = document.getElementById("icon")
+
+        icon.onclick = function(){
+            document.body.classList.toggle("dark__theme");
+            if(document.body.classList.contains("dark__theme")){
+                icon.src = "./img/sun.png";
+            }else{
+                icon.src = "./img/night-mode.png";
+            }
+        }
+
+    </script>
+</body>
+</html>
